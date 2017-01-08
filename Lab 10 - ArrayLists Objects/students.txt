@@ -1,0 +1,8 @@
+Scott,Grissom,123,4.0
+Roger,Ferguson,124,2.8
+Teresa,Peterman,101,3.7
+Derp,Derpson,102,3.9
+Derpina,Derpy,103,2.4
+Derpey,Derpson,104,1.2
+Ben,Dover,101,1.1
+Seymour,Butts,103,.52
