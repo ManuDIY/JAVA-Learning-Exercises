@@ -1,77 +1,72 @@
 
-/**
- * Write a description of class BankAccount here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import java.util.*;
 import java.text.NumberFormat;
 
 public class BankAccount
 {
+    public String customer = "TJ Zimmerman";
+    public double balance;
+    public final double rate = 0.05;
+    NumberFormat fmt1 = NumberFormat.getCurrencyInstance();
 
-   private int acctnum;
-   private String owner;
-   private double initial;
-   
+    public BankAccount (String name)
+    {
+        //name = "Bob";
+        balance = 50.00;
+        System.out.println("Welcome to " + customer + "'s bank account. His current  balance is: " + fmt1.format(balance));
+    }
 
-   public static void main(String args[])
+    public BankAccount (String name, double amount)
     {
-        BankAccount joe = new BankAccount ("Joe Smith", 5643, 1000.0);
-        joe.makeDeposit(247.35);
-        
-        BankAccount mary = new BankAccount ("Mary Smith", 1946, 1000000);
-        mary.makeDeposit(235.99);
-        mary.makeWithdrawal(1.00);
-        
-        System.out.println(joe);
-        System.out.println(mary);
-        
+        name = "TJ Zimmerman";
+
+        balance = amount;
+        System.out.println("Welcome to " + customer + "'s bank account. His balance is: " + fmt1.format(balance));
     }
-    
-   public BankAccount (String name, int acct, double balance)
-   {
-       owner = name;
-       acctnum = acct;
-       initial = balance; 
-       
-       
-    }
-    
-    public void makeDeposit(double amount)
+
+    public double getBalance ()
     {
-      initial = initial + amount;
-      
-      
-        
+        return balance;   
     }
-    
-    public void makeWithdrawal(double amount)
+
+    public void deposit (double amount)
     {
-        initial = initial - amount;
-       
-        
+        balance += amount;
+        System.out.println("You just made a deposit of " + amount);
     }
-    
-    public double getBalance()
+
+    public void withdraw (double amount)
     {
-        return initial;
-        
+        if (amount > balance){
+            System.out.println ("Not enough funds. Please try again later.");}
+        else {
+            balance -= amount;   
+            System.out.println (amount + "has been subtracted from your account."); 
+        }
     }
-    
-    public String getName()
+
+    public void printStatement()
     {
-        return owner;
+        System.out.println("Customer: " + customer);
+
+        System.out.println("Balance: " + balance);
     }
-    
-    public int getID()
+
+    public void applyOneMonthInterest()
     {
-        return acctnum;
+        //System.out.println("Balance after one month's interest: ");
+
+        balance += balance*(rate/12);
     }
-    
-    public String toString()
-    {
-        NumberFormat fmt = NumberFormat.getCurrencyInstance();
-        return owner + "   " + acctnum + "   " + fmt.format(initial);
+
+    public static void main(String [] args)
+    {   
+        BankAccount b = new BankAccount("TJ Zimmerman", 100.00);
+        b.deposit(20.0);
+        b.getBalance();
+        b.applyOneMonthInterest();
+        b.printStatement();
     }
 }
+
+ 
