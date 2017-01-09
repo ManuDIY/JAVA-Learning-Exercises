@@ -1,6 +1,6 @@
-#Java Learning Labs: CIS 162
+#JAVA Learning Exercises
 
-This repository is a collection of small JAVA programs that I wrote when learning how to program in JAVA. They cover topics like strings, array lists, GUIs, and more. All projects were written in BlueJ originally, although they could probably be imported into any other IDE as well.
+This repository is a collection of small JAVA programs that I wrote when learning how to program in JAVA. They cover topics like strings, array lists, GUIs, and more. 
 
 ##Bank Account
 
