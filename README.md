@@ -17,9 +17,11 @@ This program is used to translate an encrypted phrase from a string. Was used to
 
 This program reads in a list of line delimited students formatted like this: `fname,lname,id,gpa` and outputs several new lists including:
 
+```
 - Full class roster
 - Highest GPA
 - Probation List
+```
 
 https://gist.github.com/zimmertr/01646027814290dd1c1df2d8ea84c5a7
 
