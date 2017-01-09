@@ -27,13 +27,13 @@ https://gist.github.com/zimmertr/01646027814290dd1c1df2d8ea84c5a7
 
 Pizza Order is a graphical program that calculates the cost of a pizza as a user selects radio buttons and checkboxes for toppings, sizes, and styles.
 
-![Alt text](https://raw.githubusercontent.com/zimmertr/JAVA-Learning-Labs-CIS162/master/Pizza%2Order/screenshot.png "Pizza Order")
+![Alt text](https://raw.githubusercontent.com/zimmertr/JAVA-Learning-Labs-CIS162/master/Pizza%20Order/screenshot.png "Pizza Order")
 
 ##Car Payment Panel
 
 Car Payment Panel was a program written to learn how to use Graphical User Interfaces to accept input from users. The user inputs the principle, interest, and amount of months on a car loan and the monthly cost is outputted to the user.
 
-![Alt text](https://raw.githubusercontent.com/zimmertr/JAVA-Learning-Labs-CIS162/master/Car%2Payment%2Panel/screenshot.png "GUI")
+![Alt text](https://raw.githubusercontent.com/zimmertr/JAVA-Learning-Labs-CIS162/master/Car%20Payment%20Panel/screenshot.png "GUI")
 
 
 ##String Generator
